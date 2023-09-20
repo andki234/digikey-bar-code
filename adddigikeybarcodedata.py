@@ -99,7 +99,7 @@ def main():
                 print("Exiting program.")
                 break
 
-            print(f"Received from keyboard: {received_str.decode('utf-8')}")
+            logging.debug(f"Received from keyboard: {received_str.decode('utf-8')}")
 
             extracted_substrings = extract_substrings(received_str)
             print("Extracted substrings:")
